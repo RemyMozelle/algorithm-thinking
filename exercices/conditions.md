@@ -10,6 +10,8 @@ SI 15 < 20 ALORS
 SINON
     Affiche("Iron Man")
 FINSI
+
+Affiche("Team Captain America")
 ```
 
 ### Exercice 2
@@ -21,6 +23,8 @@ SI age < 18 ALORS
 SINON
     Affiche ("Vous êtes majeur")
 FINSI
+
+Affiche ("Vous êtes mineur")
 ```
 
 ### Exercice 3
@@ -32,6 +36,8 @@ SI age < 18 ALORS
 SINON
     Affiche("Vous êtes majeur")
 FINSI
+
+Affiche("Vous êtes majeur")
 ```
 
 ### Exercice 4
@@ -44,6 +50,8 @@ SI animal = "chat" ET couleur = "marron" ALORS
 SINON
     Affiche ("Ce n'est pas mon chat")
 FINSI
+
+Affiche ("C'est mon chat")
 ```
 
 ### Exercice 5
@@ -56,9 +64,11 @@ SI animal = "chat" ET couleur = "blanc" ALORS
 SINON
     Affiche("Ce n'est pas mon chat")
 FINSI
+
+Affiche("C'est mon chat")
 ```
 
-### Exercice 6
+### Exercice 6 
 
 ```
 cadeau  <- "Iphone"
@@ -71,10 +81,12 @@ SINON
         Affiche("Merci :)")
     FINSI
 FINSI
+
+Affiche("Jette moi ça !!!")
 ```
 
 ### Exercice 7
-
+Affiche("Merci !!! Ca me fait trop plaisir !")
 ```
 cadeau  <- "Galaxy S7"
 SI cadeau = "Galaxy S7" OU cadeau = "Galaxy S8" ALORS
@@ -86,16 +98,17 @@ SINON
         Affiche("Merci :)")
     FINSI
 FINSI
+
+Affiche("Merci !!! Ca me fait trop plaisir !")
 ```
 
 ### Exercice 8
-
 Compléter la condition ci-dessous pour afficher *C'est mon animal* quand l'animal est un chat de couleur gris ou un chien de couleur "marron".
 
 ```
 animal  <- "chien"
 couleur <- "noir"
-SI ..................  ALORS
+SI (animal = "chat" ET couleur = "gris") OU (animal = "chien" ET couleur = "marron") ALORS
     Affiche("C'est mon animal")
 SINON
     Affiche("Ce n'est pas mon animal")
@@ -103,13 +116,15 @@ FINSI
 ```
 
 ### Exercice 9
+SI animal = chat ET (couleur = gris OU couleur = marron)
 
 Compléter la condition ci-dessous pour afficher *C'est mon animal* quand l'animal est un chat de couleur *gris* ou de couleur *marron*.
 
 ```
 animal  <- "chien"
 couleur <- "noir"
-SI ..................  ALORS
+
+SI animal = "chat" ET (couleur = "gris" OU couleur = "marron") ALORS
     Affiche("C'est mon animal")
 SINON
     Affiche("Ce n'est pas mon animal")
